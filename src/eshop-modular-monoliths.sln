@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bootstrapper", "Bootstrapper", "{0C867679-7126-4FE4-AF2E-FB4BBC99D86F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{8879396A-C841-4235-B86B-F13092206CFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{899182C6-FB31-4022-8498-18FCA2E4574F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "Bootstrapper\API\API.csproj", "{7034E9D7-3BE0-4E12-99AB-94D4C0ED8151}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{872EE37F-59A4-46AF-B12A-859CB174082B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{D6D6134A-12D3-4AE1-AE90-261FC474BDAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{332EE3DB-4837-425A-8D26-A37572FE6D41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7034E9D7-3BE0-4E12-99AB-94D4C0ED8151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7034E9D7-3BE0-4E12-99AB-94D4C0ED8151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7034E9D7-3BE0-4E12-99AB-94D4C0ED8151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7034E9D7-3BE0-4E12-99AB-94D4C0ED8151}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7034E9D7-3BE0-4E12-99AB-94D4C0ED8151} = {0C867679-7126-4FE4-AF2E-FB4BBC99D86F}
+		{872EE37F-59A4-46AF-B12A-859CB174082B} = {8879396A-C841-4235-B86B-F13092206CFC}
+		{D6D6134A-12D3-4AE1-AE90-261FC474BDAB} = {8879396A-C841-4235-B86B-F13092206CFC}
+		{332EE3DB-4837-425A-8D26-A37572FE6D41} = {8879396A-C841-4235-B86B-F13092206CFC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EF9EC2D-3516-4FE5-9A4B-370B38C4F998}
+	EndGlobalSection
+EndGlobal
