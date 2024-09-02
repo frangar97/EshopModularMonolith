@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Shared.Data;
 
 namespace Catalog
 {
@@ -18,6 +19,8 @@ namespace Catalog
 
         public static IApplicationBuilder UseCatalogModule(this IApplicationBuilder app)
         {
+            app.UseMigration<CatalogDbContext>();
+
             return app;
         }
     }
