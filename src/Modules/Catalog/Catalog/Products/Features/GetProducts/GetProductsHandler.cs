@@ -1,10 +1,10 @@
 ﻿namespace Catalog.Products.Features.GetProducts
 {
-    public record GetProdutsQuery() : IQuery<GetProductsResult>;
+    public record GetProductsQuery() : IQuery<GetProductsResult>;
     public record GetProductsResult(IEnumerable<ProductDto> Products);
-    internal class GetProductsHandler(CatalogDbContext dbContext) : IQueryHandler<GetProdutsQuery, GetProductsResult>
+    internal class GetProductsHandler(CatalogDbContext dbContext) : IQueryHandler<GetProductsQuery, GetProductsResult>
     {
-        public async Task<GetProductsResult> Handle(GetProdutsQuery request, CancellationToken cancellationToken)
+        public async Task<GetProductsResult> Handle(GetProductsQuery request, CancellationToken cancellationToken)
         {
             List<Product> products = await dbContext.Products
                 .AsNoTracking()
