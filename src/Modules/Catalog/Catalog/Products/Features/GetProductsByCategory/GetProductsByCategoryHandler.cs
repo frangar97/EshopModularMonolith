@@ -1,12 +1,12 @@
 ﻿namespace Catalog.Products.Features.GetProductsByCategory
 {
-    public record GetProducsByCategoryQuery(string category) : IQuery<GetProductsByCategoryResult>;
+    public record GetProductsByCategoryQuery(string category) : IQuery<GetProductsByCategoryResult>;
 
     public record GetProductsByCategoryResult(IEnumerable<ProductDto> products);
 
-    internal class GetProductsByCategoryHandler(CatalogDbContext dbContext) : IQueryHandler<GetProducsByCategoryQuery, GetProductsByCategoryResult>
+    internal class GetProductsByCategoryHandler(CatalogDbContext dbContext) : IQueryHandler<GetProductsByCategoryQuery, GetProductsByCategoryResult>
     {
-        public async Task<GetProductsByCategoryResult> Handle(GetProducsByCategoryQuery request, CancellationToken cancellationToken)
+        public async Task<GetProductsByCategoryResult> Handle(GetProductsByCategoryQuery request, CancellationToken cancellationToken)
         {
             List<Product> products = await dbContext.Products
                 .AsNoTracking()
