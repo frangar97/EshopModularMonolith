@@ -1,7 +1,7 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.EntityFrameworkCore.Diagnostics;
+﻿using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Shared.Behaviors;
 using Shared.Data;
 using Shared.Data.Interceptors;
 
@@ -14,7 +14,8 @@ namespace Catalog
             // Application use case services
             services.AddMediatR(config => 
             {
-                config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());    
+                config.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+                config.AddOpenBehavior(typeof(ValidationBehavior<,>));
             });
 
             // Data - Infrastructure services
