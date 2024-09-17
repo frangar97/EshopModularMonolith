@@ -1,6 +1,4 @@
-﻿using FluentValidation;
-
-namespace Catalog.Products.Features.CreateProduct
+﻿namespace Catalog.Products.Features.CreateProduct
 {
     public record CreateProductCommand(ProductDto Product) : ICommand<CreateProductResult>;
     public record CreateProductResult(Guid Id);
