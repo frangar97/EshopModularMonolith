@@ -18,7 +18,7 @@
 
             if (product == null)
             {
-                throw new Exception($"Product not found: {request.ProductId}");
+                throw new ProductNotFoundException(request.ProductId);
             }
 
             dbContext.Products.Remove(product);

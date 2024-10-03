@@ -19,7 +19,7 @@
 
             if (product == null)
             {
-                throw new Exception($"Product not found: {request.Product.Id}");
+                throw new ProductNotFoundException(request.Product.Id);
             }
 
             UpdateProductWithNewValues(product, request.Product);
