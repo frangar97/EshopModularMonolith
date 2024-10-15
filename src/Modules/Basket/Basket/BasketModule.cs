@@ -1,5 +1,4 @@
-﻿using Basket.Data;
-using Microsoft.AspNetCore.Builder;
+﻿using Basket.Data.Repository;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,6 +11,10 @@ namespace Basket
     {
         public static IServiceCollection AddBasketModule(this IServiceCollection services, IConfiguration configuration) 
         {
+
+            services.AddScoped<IBasketRepository, BasketRepository>();
+            services.Decorate<IBasketRepository, CachedBasketRepository>();
+
             // Data - Infrastructure services
             services.AddScoped<ISaveChangesInterceptor, AuditableEntityInterceptor>();
             services.AddScoped<ISaveChangesInterceptor, DispatchDomainEventsInterceptor>();
