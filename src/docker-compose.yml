@@ -1,6 +1,9 @@
 services:
   eshopdb:
     image: postgres
+  
+  distributedcache:
+    image: redis
 
 volumes:
   postgres_eshopdb:
