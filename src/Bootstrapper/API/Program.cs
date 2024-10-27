@@ -1,5 +1,3 @@
-using Shared.Exceptions.Handler;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
@@ -13,6 +11,8 @@ builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = builder.Configuration.GetConnectionString("Redis");
 });
+
+builder.Services.AddMassTransitWithAssemblies(builder.Configuration, catalogAssembly, basketAssembly);
 
 builder.Services
     .AddBasketModule(builder.Configuration)

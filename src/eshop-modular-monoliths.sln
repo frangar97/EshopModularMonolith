@@ -27,9 +27,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared\Sha
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8DEF2C87-2FF0-4472-950E-8936381D615D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Contracts", "..\Shared.Contracts\Shared.Contracts.csproj", "{F64BDC8B-3BB7-4797-80C9-93C5CE597048}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Contracts", "..\Shared.Contracts\Shared.Contracts.csproj", "{F64BDC8B-3BB7-4797-80C9-93C5CE597048}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.Contracts", "..\Catalog.Contracts\Catalog.Contracts.csproj", "{46D1AE1C-0D61-4AE1-A8DE-65210D26F81E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.Contracts", "..\Catalog.Contracts\Catalog.Contracts.csproj", "{46D1AE1C-0D61-4AE1-A8DE-65210D26F81E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Messaging", "Shared\Shared.Messaging\Shared.Messaging.csproj", "{69996117-1EE7-4CE4-BDD8-8D2AD8237456}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{46D1AE1C-0D61-4AE1-A8DE-65210D26F81E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46D1AE1C-0D61-4AE1-A8DE-65210D26F81E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46D1AE1C-0D61-4AE1-A8DE-65210D26F81E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69996117-1EE7-4CE4-BDD8-8D2AD8237456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69996117-1EE7-4CE4-BDD8-8D2AD8237456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69996117-1EE7-4CE4-BDD8-8D2AD8237456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69996117-1EE7-4CE4-BDD8-8D2AD8237456}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +90,7 @@ Global
 		{2AE2AA42-2469-45AB-A026-6881224A464E} = {899182C6-FB31-4022-8498-18FCA2E4574F}
 		{F64BDC8B-3BB7-4797-80C9-93C5CE597048} = {899182C6-FB31-4022-8498-18FCA2E4574F}
 		{46D1AE1C-0D61-4AE1-A8DE-65210D26F81E} = {872EE37F-59A4-46AF-B12A-859CB174082B}
+		{69996117-1EE7-4CE4-BDD8-8D2AD8237456} = {899182C6-FB31-4022-8498-18FCA2E4574F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6EF9EC2D-3516-4FE5-9A4B-370B38C4F998}
